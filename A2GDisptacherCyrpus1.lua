@@ -33,22 +33,22 @@ A2GDispatcherRed1:SetTacticalDisplay( true )
 -- Setup the squadrons.
 
 A2GDispatcherRed1:SetSquadron( "BASE1 CAS", "BASE1", { "Turkey SA342" }, 2 )
-A2GDispatcherRed1:SetSquadronCas1( "BASE1 CAS", 200, 250, 300, 500, "RADIO" )
-A2GDispatcherRed1:SetSquadronTakeoffFromParkingHot( "BASE1 CAS" )
+A2GDispatcherRed1:SetSquadronCas( "BASE1 CAS", 200, 250, 300, 500, "RADIO" )
+A2GDispatcherRed1:SetSquadronTakeoffFromRunway( "BASE1 CAS" )
 A2GDispatcherRed1:SetSquadronOverhead( "BASE1 CAS", 0.25 )
 
 A2GDispatcherRed1:SetSquadron( "BASE4 BAI", "BASE4", { "Turkey UH-1H Ercan 8-3 Armed" }, 2 )
-A2GDispatcherRed1:SetSquadronBai1( "BASE4 BAI", 200, 250, 300, 500, "RADIO" )
-A2GDispatcherRed1:SetSquadronTakeoffFromParkingHot( "BASE4 BAI" )
+A2GDispatcherRed1:SetSquadronBai( "BASE4 BAI", 200, 250, 300, 500, "RADIO" )
+A2GDispatcherRed1:SetSquadronTakeoffFromRunway( "BASE4 BAI" )
 A2GDispatcherRed1:SetSquadronOverhead( "BASE4 BAI", 0.25 )
 
 A2GDispatcherRed1:SetSquadron( "Gecitkale", AIRBASE.Syria.Gecitkale, { "Turkey F-4E CAS-1", "Turkey F-5E BAI-1" }, 4 )
-A2GDispatcherRed1:SetSquadronSetSquadronBai1( "Gecitkale", 600, 800, 2000, 2000, "RADIO" )
+A2GDispatcherRed1:SetSquadronBai( "Gecitkale", 600, 800, 2000, 2000, "RADIO" )
 A2GDispatcherRed1:SetSquadronTakeoffFromParkingHot( "Gecitkale" )
 A2GDispatcherRed1:SetSquadronOverhead( "Gecitkale", 0.2 )
 
 A2GDispatcherRed1:SetSquadron( "Incirlik", AIRBASE.Syria.Incirlik, { "Turkey F-4E CAS", "Turkey F-5E BAI" }, 10 )
-A2GDispatcherRed1:SetSquadronSead2( "Incirlik", 600, 800, 2000, 2000, "RADIO" )
+A2GDispatcherRed1:SetSquadronSead( "Incirlik", 600, 800, 2000, 2000, "RADIO" )
 A2GDispatcherRed1:SetSquadronTakeoffFromParkingHot( "Incirlik" )
 A2GDispatcherRed1:SetSquadronOverhead( "Incirlik", 0.2 )
 
@@ -64,3 +64,4 @@ A2GDispatcherRed1:SetSquadronTakeoffInterval( "BASE4 BAI", 60 )
 end
 
 start_A2GDispatcherRed1()
+
